@@ -6,7 +6,7 @@
     <ui:param name="title" value="Push Message Producer" />
     <!-- content -->
     <ui:define name="content">
-        <h:form>
+        <h:form id="form">
             <br /><br /><br /><br />
             <a4j:commandButton value="Push!" action="#{richBean.push}" />
             
@@ -20,6 +20,8 @@
                 Date: #{richBean.date}
             </a4j:outputPanel>
         </h:form>
+        
+        <a4j:commandButton render="form" value="Render @form" />
     </ui:define>
 </ui:composition>
 </html>
