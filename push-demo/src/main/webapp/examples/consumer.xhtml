@@ -12,7 +12,9 @@
             
             <a4j:log mode="console" />
             
-            <a4j:push address="sampleAddress"  ondataavailable="$('*[id$=outputDate]').text(event.rf.data)" />
+            <a4j:push id="push" address="sampleAddress"  ondataavailable="$('*[id$=outputDate]').text(event.rf.data)" />
+            
+            <a4j:commandButton render="push" value="Render push" />
 
 
 
